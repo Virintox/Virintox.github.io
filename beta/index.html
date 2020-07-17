@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Virintox</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300">
+        <style>
+            body{
+                font-family: "Roboto", sans-serif;
+                text-align: center;
+                margin: 0;
+                padding:0;
+                
+            }
+            header{
+                background: rgb(32, 32, 32);
+                transition: all 0.3s ease;
+                padding: 0 20px 20px 20px;
+                border-radius: 0 0 15px 15px;
+            }
+            ul{
+                margin: 0;
+                padding: 0;
+                list-style-type: none;
+                transition: all 0.3s ease;
+            }
+            #headname{
+                padding: 30px 0 0 0;
+                font-size: 50px;
+                color: whitesmoke;
+            }
+            .navli{
+                  display:inline-block;
+            }
+            .nava{
+                transition: all 0.1s ease;
+                text-decoration: none;
+                color: whitesmoke;
+                display: inline;
+                background: rgb(32, 32, 32);
+                border-radius: 0 0 10px 10px;
+                font-size: 22px;
+                margin: 0 0 5px 0;
+                padding: 15px 30px 10px 30px;
+                box-shadow: 1px 1px 7px 1px rgba(0, 0, 0, 0.5);
+            }
+            .nava:hover{
+                transition: all 0.4s ease-in-out;
+                padding: 20px 30px 15px 30px;
+            }
+            
+            .navmain{
+                position: fixed;
+                top: -30px;
+                left: 0;
+                right: 0;
+                transition: all 0.2s ease;
+                padding: 0 0 35px 0;
+            }
+            .navmain:hover{
+                transition: all 0.3s ease-in-out;
+                padding: 0 0 10px 0;
+                top: 10px;
+            }
+            .navli a:after{
+                bottom: 0px;
+                background: red;
+                transform: translateY(-10px);
+            }
+            @media screen and (max-width: 1100px) {
+                .nava{
+                    padding: 5px 15px 5px 15px;
+                }
+            }
+            .content{
+                color:white;
+            }
+            footer{
+                background-color: rgb(110, 110, 110);
+                text-align: center;
+                padding: 10px;
+                border-radius: 10px 10px 0 0 ;
+            }
+            .infos1{
+                margin: 30px 20px 30px 20px;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: center;
+                align-items: baseline;
+            }
+            .flexelement{
+                margin: 0 20px 0 20px;
+                padding: 15px;
+                border-radius: 20px ;
+                background-color: rgb(32, 32, 32);
+                box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+            }
+            .applybutton{
+                border-radius: 5px;
+                font-size: 15px;
+                background: whitesmoke;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav class="navmain">
+                <ul>
+                    <li class="navli"><a class="nava" href="index.html"><i class="underline"></i><span class="navspan">Home</span></a></li>
+                    <li class="navli"><a class="nava" href="contact.html"><span class="navspan">Contact</span></a></li>
+                    <li class="navli"><a class="nava" href="https://docs.google.com/forms/d/1GOkfbA8PglPSBbAdf1iIgHCLUmeWKlIsXzdmdppalFw"><span class="navspan">Bewerbung</span></a></li>
+                    <li class="navli"><a class="nava" href="ts3server://virintox.com?port=9987"><span class="navspan">Teamspeak</span></a></li>
+                    <li class="navli"><a class="nava" href="games.html"><span class="navspan">Games</span></a></li>
+                    <li class="navli"><a class="nava" href="software.html"><span class="navspan">Software</span></a></li>
+                </ul>
+            </nav>
+            <div id="headname">Home</div>
+        </header>
+        <section class="content">
+            <section class="infos1">
+                <div class="flexelement">
+                    <h2>Das Team</h2>
+                    Solltest du mal ein Problem haben,<br/>
+                    scheue dich nicht, uns auf unserem <br/>
+                    Teamspeak-Server im Support zu besuchen.<br/>
+                    Unser Team nimmt sich gerne für dich<br/>
+                    Zeit und hilft dir so gut es geht.
+                </div>
+                <div class="flexelement">
+                    <h2>Suchst du noch ein Team ?</h2>
+                    Such nicht weiter bei uns<br/> 
+                    sind noch Plätze frei<br/>
+                    also bewerbe dich noch heute auf Virintox.com,<br/>
+                    du wirst es nicht bereuen.<br/>
+                    <Button class="applybutton" href="https://forms.gle/LnJvwB8cZpcv79wR6">Jetzt Bewerben</Button>
+                </div>
+                <div class="flexelement">
+                    <h2>Wurdest du zu unrecht gebannt?</h2>
+                    Klicke auf den Button <br/>
+                    dort kannst du ein Entbannungsformular <br/>
+                    ausfüllen das du wieder auf den<br/>
+                    Teamspeak kommen kannst?
+                    <Button class="applybutton" href="https://forms.gle/WvJzU2tvaP22pLKg9">Entbannungs Antrag</Button>
+                </div>
+            </section>
+        </section>
+    </body>
+    <footer>
+        <div>
+            © Copyright 2019 Virintox
+        </div>
+        <a href="impressum.html">Impressum</a>
+    </footer>
+</html>
